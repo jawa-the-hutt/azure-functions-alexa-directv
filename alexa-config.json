@@ -1,0 +1,2778 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "direct tv",
+            "intents": [
+                {
+                    "name": "DirectvIntent",
+                    "slots": [
+                        {
+                            "name": "Control",
+                            "type": "Control_List"
+                        },
+                        {
+                            "name": "Channel",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Room",
+                            "type": "Room_List"
+                        }
+                    ],
+                    "samples": [
+                        "to change to {Control}",
+                        "to change to {Control} in the {Room}",
+                        "to find {Control}",
+                        "to find {Control} in the {Room}",
+                        "to go to {Control}",
+                        "to go to {Control} in the {Room}",
+                        "to {Control}",
+                        "to {Control} in the {Room}",
+                        "to turn on {Control}",
+                        "to turn on {Control} in the {Room}",
+                        "to go back to {Control}",
+                        "to go back to {Control} in the {Room}",
+                        "to try {Control}",
+                        "to try {Control} in the {Room}",
+                        "to tune in to {Control}",
+                        "to tune in to {Control} in the {Room}",
+                        "to get me {Control}",
+                        "to get me {Control} in the {Room}",
+                        "to get me the {Control}",
+                        "to get me the {Control} in the {Room}",
+                        "to fetch me {Control}",
+                        "to fetch me {Control} in the {Room}",
+                        "to see whats on {Control}",
+                        "to see whats on {Control} in the {Room}",
+                        "to see what is on {Control}",
+                        "to see what is on {Control} in the {Room}",
+                        "whats on {Control}",
+                        "whats on {Control} in the {Room} in the {Room}",
+                        "what is on {Control}",
+                        "what is on {Control} in the {Room} in the {Room}",
+                        "to go {Control}",
+                        "to go {Control} in the {Room}",
+                        "to change the channel to {Control}",
+                        "to change the channel to {Control} in the {Room}",
+                        "to turn the channel to {Control}",
+                        "to turn the channel to {Control} in the {Room}",
+                        "to make it {Control}",
+                        "to make it {Control} in the {Room}",
+                        "to {Control} now",
+                        "to {Control} now in the {Room}",
+                        "to {Control} right now",
+                        "to {Control} right now in the {Room}",
+                        "to {Control} please",
+                        "to {Control} please in the {Room}",
+                        "{Channel}",
+                        "{Channel} in the {Room}",
+                        "to change to {Channel}",
+                        "to change to {Channel} in the {Room}",
+                        "to change to channel {Channel}",
+                        "to change to channel {Channel} in the {Room}",
+                        "to find {Channel}",
+                        "to find {Channel} in the {Room}",
+                        "to find channel {Channel}",
+                        "to find channel {Channel} in the {Room}",
+                        "to go to {Channel}",
+                        "to go to {Channel} in the {Room}",
+                        "to go to channel {Channel}",
+                        "to go to channel {Channel} in the {Room}",
+                        "to turn on {Channel}",
+                        "to turn on {Channel} in the {Room}",
+                        "to turn on channel {Channel}",
+                        "to turn on channel {Channel} in the {Room}",
+                        "to go back to {Channel}",
+                        "to go back to {Channel} in the {Room}",
+                        "to go back to channel {Channel}",
+                        "to go back to channel {Channel} in the {Room}",
+                        "back to {Channel}",
+                        "back to {Channel} in the {Room}",
+                        "back to channel {Channel}",
+                        "back to channel {Channel} in the {Room}",
+                        "to try {Channel}",
+                        "to try {Channel} in the {Room}",
+                        "to try channel {Channel}",
+                        "to try channel {Channel} in the {Room}",
+                        "to tune in to {Channel}",
+                        "to tune in to {Channel} in the {Room}",
+                        "to tune into {Channel}",
+                        "to tune into {Channel} in the {Room}",
+                        "to tune into channel {Channel}",
+                        "to tune into channel {Channel} in the {Room}",
+                        "to get me {Channel}",
+                        "to get me {Channel} in the {Room}",
+                        "to get me channel {Channel}",
+                        "to get me channel {Channel} in the {Room}",
+                        "to get me the {Channel}",
+                        "to get me the {Channel} in the {Room}",
+                        "to get me the channel {Channel}",
+                        "to get me the channel {Channel} in the {Room}",
+                        "to see whats on {Channel}",
+                        "to see whats on {Channel} in the {Room}",
+                        "to see whats on channel {Channel}",
+                        "to see whats on channel {Channel} in the {Room}",
+                        "to see what is on {Channel}",
+                        "to see what is on {Channel} in the {Room}",
+                        "to see what is on channel {Channel}",
+                        "to see what is on channel {Channel} in the {Room}",
+                        "whats on {Channel}",
+                        "whats on {Channel} in the {Room}",
+                        "what is on {Channel}",
+                        "what is on {Channel} in the {Room}",
+                        "to change the channel to {Channel}",
+                        "to change the channel to {Channel} in the {Room}",
+                        "to turn the channel to {Channel}",
+                        "to turn the channel to {Channel} in the {Room}",
+                        "{Channel} now",
+                        "{Channel} now in the {Room}",
+                        "{Channel} right now",
+                        "{Channel} right now in the {Room}",
+                        "{Channel} please",
+                        "{Channel} please in the {Room}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Control_List",
+                    "values": [
+                        {
+                            "id": "PLAY",
+                            "name": {
+                                "value": "play",
+                                "synonyms": [
+                                    "resume"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PAUSE",
+                            "name": {
+                                "value": "pause",
+                                "synonyms": [
+                                    "freeze"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GUIDE",
+                            "name": {
+                                "value": "guide"
+                            }
+                        },
+                        {
+                            "id": "POWER",
+                            "name": {
+                                "value": "power"
+                            }
+                        },
+                        {
+                            "id": "POWER-ON",
+                            "name": {
+                                "value": "power on",
+                                "synonyms": [
+                                    "turn on"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "POWER-OFF",
+                            "name": {
+                                "value": "power off",
+                                "synonyms": [
+                                    "turn off"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FORMAT",
+                            "name": {
+                                "value": "format"
+                            }
+                        },
+                        {
+                            "id": "REWIND",
+                            "name": {
+                                "value": "rewind"
+                            }
+                        },
+                        {
+                            "id": "REPLAY",
+                            "name": {
+                                "value": "replay"
+                            }
+                        },
+                        {
+                            "id": "STOP",
+                            "name": {
+                                "value": "stop"
+                            }
+                        },
+                        {
+                            "id": "ADVANCE",
+                            "name": {
+                                "value": "advance"
+                            }
+                        },
+                        {
+                            "id": "FAST-FORWARD",
+                            "name": {
+                                "value": "fast forward"
+                            }
+                        },
+                        {
+                            "id": "RECORD",
+                            "name": {
+                                "value": "record",
+                                "synonyms": [
+                                    "save"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ACTIVE",
+                            "name": {
+                                "value": "active"
+                            }
+                        },
+                        {
+                            "id": "DVR",
+                            "name": {
+                                "value": "DVR",
+                                "synonyms": [
+                                    "list",
+                                    "recorded shows",
+                                    "list recorded shows"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EXIT",
+                            "name": {
+                                "value": "exit",
+                                "synonyms": [
+                                    "end",
+                                    "leave"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "RED",
+                            "name": {
+                                "value": "red"
+                            }
+                        },
+                        {
+                            "id": "GREEN",
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "id": "YELLOW",
+                            "name": {
+                                "value": "yellow"
+                            }
+                        },
+                        {
+                            "id": "BLUE",
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "id": "BACK",
+                            "name": {
+                                "value": "back"
+                            }
+                        },
+                        {
+                            "id": "MENU",
+                            "name": {
+                                "value": "menu"
+                            }
+                        },
+                        {
+                            "id": "INFO",
+                            "name": {
+                                "value": "info"
+                            }
+                        },
+                        {
+                            "id": "UP",
+                            "name": {
+                                "value": "up"
+                            }
+                        },
+                        {
+                            "id": "DOWN",
+                            "name": {
+                                "value": "down"
+                            }
+                        },
+                        {
+                            "id": "LEFT",
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "id": "RIGHT",
+                            "name": {
+                                "value": "right",
+                                "synonyms": [
+                                    "write"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SELECT",
+                            "name": {
+                                "value": "select",
+                                "synonyms": [
+                                    "enter"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CHANNEL-UP",
+                            "name": {
+                                "value": "channel up",
+                                "synonyms": [
+                                    "page up"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CHANNEL-DOWN",
+                            "name": {
+                                "value": "channel down",
+                                "synonyms": [
+                                    "page down"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PREVIOUS",
+                            "name": {
+                                "value": "previous",
+                                "synonyms": [
+                                    "previous channel",
+                                    "previous-channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-LOCAL",
+                            "name": {
+                                "value": "NBC local",
+                                "synonyms": [
+                                    "KY3",
+                                    "KY 3",
+                                    "KY three",
+                                    "k.y.3",
+                                    "k.y three",
+                                    "KYTV",
+                                    "k.y.t.v"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOX-LOCAL",
+                            "name": {
+                                "value": "fox local",
+                                "synonyms": [
+                                    "KRBK",
+                                    "k.r.b.k"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CBS-LOCAL",
+                            "name": {
+                                "value": "CBS local",
+                                "synonyms": [
+                                    "KOLR",
+                                    "k.o.l.r"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CW-LOCAL",
+                            "name": {
+                                "value": "CW local",
+                                "synonyms": [
+                                    "the CW local",
+                                    "KYCW",
+                                    "k.y.c.w"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PBS-LOCAL",
+                            "name": {
+                                "value": "PBS local",
+                                "synonyms": [
+                                    "KOZK",
+                                    "k.o.z.k"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MY-TV",
+                            "name": {
+                                "value": "my TV",
+                                "synonyms": [
+                                    "KOZL",
+                                    "k.o.z.l"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ABC-LOCAL",
+                            "name": {
+                                "value": "ABC local",
+                                "synonyms": [
+                                    "KSPR",
+                                    "k.s.p.r"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CNN",
+                            "name": {
+                                "value": "CNN"
+                            }
+                        },
+                        {
+                            "id": "HLN",
+                            "name": {
+                                "value": "HLN",
+                                "synonyms": [
+                                    "h.l.n",
+                                    "head line news"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ESPN",
+                            "name": {
+                                "value": "ESPN"
+                            }
+                        },
+                        {
+                            "id": "ESPN-NEWS",
+                            "name": {
+                                "value": "ESPN news"
+                            }
+                        },
+                        {
+                            "id": "ESPNU",
+                            "name": {
+                                "value": "ESPNU",
+                                "synonyms": [
+                                    "ESPN you"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ESPN2",
+                            "name": {
+                                "value": "ESPN2",
+                                "synonyms": [
+                                    "ESPN 2",
+                                    "ESPN two",
+                                    "ESPN to",
+                                    "ESPN too"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MLB",
+                            "name": {
+                                "value": "MLB",
+                                "synonyms": [
+                                    "MLB network",
+                                    "the MLB network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NFL",
+                            "name": {
+                                "value": "NFL",
+                                "synonyms": [
+                                    "NFL network",
+                                    "the NFL network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MAVTV",
+                            "name": {
+                                "value": "mav TV",
+                                "synonyms": [
+                                    "MAVTV"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NHL",
+                            "name": {
+                                "value": "NHL",
+                                "synonyms": [
+                                    "NHL network",
+                                    "the NHL network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NHL-ALT",
+                            "name": {
+                                "value": "NHL alternate",
+                                "synonyms": [
+                                    "NHL network alternate",
+                                    "the NHL network alternate"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBA",
+                            "name": {
+                                "value": "NBA",
+                                "synonyms": [
+                                    "NBA TV",
+                                    "NBATV"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TENNIS",
+                            "name": {
+                                "value": "tennis channel",
+                                "synonyms": [
+                                    "the tennis channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GOLF",
+                            "name": {
+                                "value": "golf channel",
+                                "synonyms": [
+                                    "the golf channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS1",
+                            "name": {
+                                "value": "fox sports 1",
+                                "synonyms": [
+                                    "fox sports1",
+                                    "fox sports one"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS",
+                            "name": {
+                                "value": "NBC sports",
+                                "synonyms": [
+                                    "NBC sports network",
+                                    "the NBC sports network",
+                                    "NBC sports channel",
+                                    "the NBC sports channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-ALT",
+                            "name": {
+                                "value": "NBC sports alternate",
+                                "synonyms": [
+                                    "NBC sports network alternate",
+                                    "the NBC sports network alternate",
+                                    "NBC sports channel alternate",
+                                    "the NBC sports channel alternate"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CBS-SPORTS",
+                            "name": {
+                                "value": "CBS sports",
+                                "synonyms": [
+                                    "CBS sports network",
+                                    "the CBS sports network",
+                                    "CBS sports channel",
+                                    "the CBS sports channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HGTV",
+                            "name": {
+                                "value": "HGTV",
+                                "synonyms": [
+                                    "h.g.t.v",
+                                    "home and garden",
+                                    "home and garden tv",
+                                    "the home and garden network",
+                                    "the home and garden channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DIY",
+                            "name": {
+                                "value": "DIY",
+                                "synonyms": [
+                                    "DIY Network",
+                                    "d.i.y",
+                                    "do it yourself network",
+                                    "do it yourself",
+                                    "the do it yourself network",
+                                    "the do it yourself channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOOD",
+                            "name": {
+                                "value": "food network",
+                                "synonyms": [
+                                    "the food network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "COOKING",
+                            "name": {
+                                "value": "cooking channel",
+                                "synonyms": [
+                                    "the cooking channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GSN",
+                            "name": {
+                                "value": "GSN",
+                                "synonyms": [
+                                    "g.s.n",
+                                    "game show network",
+                                    "the game show network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "E!",
+                            "name": {
+                                "value": "e!",
+                                "synonyms": [
+                                    "e",
+                                    "ee",
+                                    "eee",
+                                    "entertainment network",
+                                    "the entertainment network",
+                                    "the entertainment channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BRAVO",
+                            "name": {
+                                "value": "bravo"
+                            }
+                        },
+                        {
+                            "id": "REELZ",
+                            "name": {
+                                "value": "reels",
+                                "synonyms": [
+                                    "reelz"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PARAMOUNT",
+                            "name": {
+                                "value": "paramount",
+                                "synonyms": [
+                                    "paramount network",
+                                    "the paramount network",
+                                    "spike",
+                                    "spike TV",
+                                    "the spike TV channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "USA",
+                            "name": {
+                                "value": "USA",
+                                "synonyms": [
+                                    "u.s.a",
+                                    "USA network",
+                                    "the USA network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SYFY",
+                            "name": {
+                                "value": "syfy",
+                                "synonyms": [
+                                    "sci fi",
+                                    "si fi",
+                                    "syfy channel",
+                                    "sci fi channel",
+                                    "si fi channel",
+                                    "the sci fi channel",
+                                    "the si fi channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TNT",
+                            "name": {
+                                "value": "TNT",
+                                "synonyms": [
+                                    "t.n.t",
+                                    "turner network television"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TRUTV",
+                            "name": {
+                                "value": "true TV"
+                            }
+                        },
+                        {
+                            "id": "TBS",
+                            "name": {
+                                "value": "TBS",
+                                "synonyms": [
+                                    "t.b.s",
+                                    "turner broadcasting system"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FX",
+                            "name": {
+                                "value": "FX",
+                                "synonyms": [
+                                    "f.x"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "COMEDY-CENTRAL",
+                            "name": {
+                                "value": "comedy central"
+                            }
+                        },
+                        {
+                            "id": "OXYGEN",
+                            "name": {
+                                "value": "oxygen",
+                                "synonyms": [
+                                    "oxygen channel",
+                                    "the oxygen channel",
+                                    "oxygen network",
+                                    "the oxygen network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LIFETIME",
+                            "name": {
+                                "value": "lifetime",
+                                "synonyms": [
+                                    "life-time",
+                                    "life time",
+                                    "the lifetime network",
+                                    "the life-time network",
+                                    "the life time network",
+                                    "the lifetime channel",
+                                    "the life-time channel",
+                                    "the life time channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LMN",
+                            "name": {
+                                "value": "LMN",
+                                "synonyms": [
+                                    "l.m.n",
+                                    "lifetime movie network",
+                                    "life-time movie network",
+                                    "life time movie network",
+                                    "the lifetime movie network",
+                                    "the life-time movie network",
+                                    "the life time movie network",
+                                    "the lifetime movie channel",
+                                    "the life-time movie channel",
+                                    "the life time movie channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "AMC",
+                            "name": {
+                                "value": "AMC",
+                                "synonyms": [
+                                    "a.m.c",
+                                    "a.m. c",
+                                    "american movie classics"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TCM",
+                            "name": {
+                                "value": "TCM",
+                                "synonyms": [
+                                    "t.c.m",
+                                    "turner classic movies"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FXM",
+                            "name": {
+                                "value": "FXM",
+                                "synonyms": [
+                                    "f.x.m",
+                                    "fox movie network",
+                                    "the fox movie network",
+                                    "the fox movie channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FXX",
+                            "name": {
+                                "value": "FXX",
+                                "synonyms": [
+                                    "f.x.x"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "WE-TV",
+                            "name": {
+                                "value": "we TV"
+                            }
+                        },
+                        {
+                            "id": "DISCOVERY-LIFE",
+                            "name": {
+                                "value": "discovery life",
+                                "synonyms": [
+                                    "the discovery life channel",
+                                    "the discovery life network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BBC-AMERICA",
+                            "name": {
+                                "value": "BBC america"
+                            }
+                        },
+                        {
+                            "id": "A&E",
+                            "name": {
+                                "value": "A an E",
+                                "synonyms": [
+                                    "A and E",
+                                    "arts and entertainment"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FYI",
+                            "name": {
+                                "value": "FYI",
+                                "synonyms": [
+                                    "for your information"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HISTORY",
+                            "name": {
+                                "value": "history",
+                                "synonyms": [
+                                    "history channel",
+                                    "the history channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VICELAND",
+                            "name": {
+                                "value": "viceland",
+                                "synonyms": [
+                                    "vice-land",
+                                    "vice land"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LOGO",
+                            "name": {
+                                "value": "logo TV",
+                                "synonyms": [
+                                    "logo television",
+                                    "logo"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "POP",
+                            "name": {
+                                "value": "pop"
+                            }
+                        },
+                        {
+                            "id": "OVATION",
+                            "name": {
+                                "value": "ovation"
+                            }
+                        },
+                        {
+                            "id": "NAT-GEO",
+                            "name": {
+                                "value": "nat geo",
+                                "synonyms": [
+                                    "Nat geo",
+                                    "national geographic"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TRAVEL",
+                            "name": {
+                                "value": "travel",
+                                "synonyms": [
+                                    "travel channel",
+                                    "the travel channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DISCOVERY",
+                            "name": {
+                                "value": "discovery",
+                                "synonyms": [
+                                    "the discovery channel",
+                                    "discovery channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "OWN",
+                            "name": {
+                                "value": "OWN",
+                                "synonyms": [
+                                    "o.w.n",
+                                    "oprah winfrey network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TLC",
+                            "name": {
+                                "value": "tlc",
+                                "synonyms": [
+                                    "t.l.c",
+                                    "learning channel",
+                                    "the learning channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VELOCITY",
+                            "name": {
+                                "value": "velocity"
+                            }
+                        },
+                        {
+                            "id": "ANIMAL-PLANET",
+                            "name": {
+                                "value": "animal planet",
+                                "synonyms": [
+                                    "the animal planet"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NAT-GEO-WILD",
+                            "name": {
+                                "value": "nat geo wild",
+                                "synonyms": [
+                                    "Nat geo wild",
+                                    "national geographic wild"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SCIENCE",
+                            "name": {
+                                "value": "science",
+                                "synonyms": [
+                                    "science channel",
+                                    "the science channel",
+                                    "discovery science",
+                                    "discovery science channel",
+                                    "the discovery science channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "INVESTIGATION-DISOVERY",
+                            "name": {
+                                "value": "investigation discovery",
+                                "synonyms": [
+                                    "the investigation discovery channel",
+                                    "the investigation discovery network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DESTINATION-AMERICA",
+                            "name": {
+                                "value": "destination america",
+                                "synonyms": [
+                                    "the destination america channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "AMERICAN-HEROES-CHANNEL",
+                            "name": {
+                                "value": "american heroes channel",
+                                "synonyms": [
+                                    "the american heroes channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DISNEY-JUNIOR",
+                            "name": {
+                                "value": "disney junior",
+                                "synonyms": [
+                                    "the disney junior channel",
+                                    "Disney junior",
+                                    "Disney Junior"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DISNEY",
+                            "name": {
+                                "value": "disney",
+                                "synonyms": [
+                                    "disney channel",
+                                    "disney east",
+                                    "disney channel east",
+                                    "the disney channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DISNEY-WEST",
+                            "name": {
+                                "value": "disney west",
+                                "synonyms": [
+                                    "disney channel west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DISNEY-XD",
+                            "name": {
+                                "value": "disney XD",
+                                "synonyms": [
+                                    "the disney XD channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BABYFIRST",
+                            "name": {
+                                "value": "babyfirst",
+                                "synonyms": [
+                                    "baby-first",
+                                    "baby first",
+                                    "the babyfirst channel",
+                                    "the baby-first channel",
+                                    "the baby first channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DISCOVERY-FAMILY",
+                            "name": {
+                                "value": "discovery family",
+                                "synonyms": [
+                                    "the discovery family channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "UNIVERSAL-KIDS",
+                            "name": {
+                                "value": "universal kids",
+                                "synonyms": [
+                                    "the universal kids channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CARTOON-NETWORK",
+                            "name": {
+                                "value": "cartoon network",
+                                "synonyms": [
+                                    "cartoon network east",
+                                    "adult swim",
+                                    "the cartoon network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CARTOON-NETWORK-WEST",
+                            "name": {
+                                "value": "cartoon network west",
+                                "synonyms": [
+                                    "the cartoon network west channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BOOMERANG",
+                            "name": {
+                                "value": "boomerang"
+                            }
+                        },
+                        {
+                            "id": "NICK",
+                            "name": {
+                                "value": "nickelodeon",
+                                "synonyms": [
+                                    "nickelodeon east",
+                                    "nick",
+                                    "nick east",
+                                    "the nickelodeon channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NICK-WEST",
+                            "name": {
+                                "value": "nickelodeon west",
+                                "synonyms": [
+                                    "nick west",
+                                    "the nickelodeon west channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NICK-JUNIOR",
+                            "name": {
+                                "value": "nick junior",
+                                "synonyms": [
+                                    "the nick junior channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NICK-TOONS",
+                            "name": {
+                                "value": "nick toons",
+                                "synonyms": [
+                                    "the nick toons channel",
+                                    "nick tunes",
+                                    "the nick tunes channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NICK-TEEN",
+                            "name": {
+                                "value": "teen nick",
+                                "synonyms": [
+                                    "the teen nick channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TV-LAND",
+                            "name": {
+                                "value": "TV land",
+                                "synonyms": [
+                                    "t.v land"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ION",
+                            "name": {
+                                "value": "ion",
+                                "synonyms": [
+                                    "eye on",
+                                    "ion east",
+                                    "eye on east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ION-WEST",
+                            "name": {
+                                "value": "ion west",
+                                "synonyms": [
+                                    "eye on west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "WGN",
+                            "name": {
+                                "value": "WGN",
+                                "synonyms": [
+                                    "WGN America"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FREEFORM",
+                            "name": {
+                                "value": "freeform",
+                                "synonyms": [
+                                    "free-form",
+                                    "free form",
+                                    "the freeform channel",
+                                    "the free-form channel",
+                                    "the free form channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HALLMARK",
+                            "name": {
+                                "value": "hallmark",
+                                "synonyms": [
+                                    "hall-mark",
+                                    "hall mark",
+                                    "hallmark channel",
+                                    "the hallmark channel",
+                                    "hall-mark channel",
+                                    "the hall-mark channel",
+                                    "hall mark channel",
+                                    "the hall mark channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GAC",
+                            "name": {
+                                "value": "great american country",
+                                "synonyms": [
+                                    "GAC",
+                                    "g.a.c",
+                                    "the great amercian country channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CMT",
+                            "name": {
+                                "value": "CMT",
+                                "synonyms": [
+                                    "country music television",
+                                    "country music TV"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "TV1",
+                            "name": {
+                                "value": "TV one"
+                            }
+                        },
+                        {
+                            "id": "BET",
+                            "name": {
+                                "value": "BET",
+                                "synonyms": [
+                                    "b.e.t"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BET-HER",
+                            "name": {
+                                "value": "BET her",
+                                "synonyms": [
+                                    "b.e.t her"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MTV",
+                            "name": {
+                                "value": "MTV"
+                            }
+                        },
+                        {
+                            "id": "MTV2",
+                            "name": {
+                                "value": "MTV2",
+                                "synonyms": [
+                                    "MTV two",
+                                    "MTV 2",
+                                    "MTV to",
+                                    "MTV too"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "IFC",
+                            "name": {
+                                "value": "IFC",
+                                "synonyms": [
+                                    "independant film channel",
+                                    "the independant film channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "VH1",
+                            "name": {
+                                "value": "VH one",
+                                "synonyms": [
+                                    "VH1",
+                                    "VH 1",
+                                    "v.h one",
+                                    "v.h 1"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MTV-CLASSICS",
+                            "name": {
+                                "value": "MTV classics"
+                            }
+                        },
+                        {
+                            "id": "UP-TV",
+                            "name": {
+                                "value": "up TV",
+                                "synonyms": [
+                                    "the up TV channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FUSE",
+                            "name": {
+                                "value": "fuse",
+                                "synonyms": [
+                                    "the fuse network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "AXS",
+                            "name": {
+                                "value": "AXS TV",
+                                "synonyms": [
+                                    "axis TV",
+                                    "access TV"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "EL-REY",
+                            "name": {
+                                "value": "el rey",
+                                "synonyms": [
+                                    "el rey network",
+                                    "the el rey network",
+                                    "el Rey",
+                                    "the el Rey network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FUSION",
+                            "name": {
+                                "value": "fusion",
+                                "synonyms": [
+                                    "the fusion network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "RFD",
+                            "name": {
+                                "value": "RFD TV",
+                                "synonyms": [
+                                    "r.f.d"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BBC-WORLD-NEWS",
+                            "name": {
+                                "value": "BBC world news",
+                                "synonyms": [
+                                    "b.b.c world news"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CSPAN",
+                            "name": {
+                                "value": "CSPAN",
+                                "synonyms": [
+                                    "c span",
+                                    "C span",
+                                    "C-span",
+                                    "c-span"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CSPAN2",
+                            "name": {
+                                "value": "CSPAN2",
+                                "synonyms": [
+                                    "c span two",
+                                    "C span two",
+                                    "C-span two",
+                                    "c-span two"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NASA",
+                            "name": {
+                                "value": "nasa TV",
+                                "synonyms": [
+                                    "nasa channel",
+                                    "nasa",
+                                    "the nasa channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BLOOMBERG",
+                            "name": {
+                                "value": "bloomberg TV",
+                                "synonyms": [
+                                    "boomberg TV network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DOG-TV",
+                            "name": {
+                                "value": "dog TV"
+                            }
+                        },
+                        {
+                            "id": "CNBC",
+                            "name": {
+                                "value": "CNBC",
+                                "synonyms": [
+                                    "c.n.b.c"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MSNBC",
+                            "name": {
+                                "value": "MSNBC",
+                                "synonyms": [
+                                    "m.s.n.b.c"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CNBC-WORLD",
+                            "name": {
+                                "value": "CNBC world",
+                                "synonyms": [
+                                    "c.n.b.c world"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOX-BUSINESS",
+                            "name": {
+                                "value": "fox business network",
+                                "synonyms": [
+                                    "fox business news"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOX-NEWS",
+                            "name": {
+                                "value": "fox news",
+                                "synonyms": [
+                                    "fox news channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "WEATHERNATION",
+                            "name": {
+                                "value": "weather nation TV",
+                                "synonyms": [
+                                    "weathernation",
+                                    "weather nation",
+                                    "weather nation channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "WEATHER-CHANNEL",
+                            "name": {
+                                "value": "weather channel",
+                                "synonyms": [
+                                    "the weather channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CBS",
+                            "name": {
+                                "value": "CBS",
+                                "synonyms": [
+                                    "CBS east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CBS-WEST",
+                            "name": {
+                                "value": "CBS west"
+                            }
+                        },
+                        {
+                            "id": "ABC",
+                            "name": {
+                                "value": "ABC",
+                                "synonyms": [
+                                    "ABC east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ABC-WEST",
+                            "name": {
+                                "value": "ABC west"
+                            }
+                        },
+                        {
+                            "id": "NBC",
+                            "name": {
+                                "value": "NBC",
+                                "synonyms": [
+                                    "NBC east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-WEST",
+                            "name": {
+                                "value": "NBC west"
+                            }
+                        },
+                        {
+                            "id": "CW",
+                            "name": {
+                                "value": "CW",
+                                "synonyms": [
+                                    "CW east",
+                                    "the CW",
+                                    "the CW east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CW-WEST",
+                            "name": {
+                                "value": "CW west",
+                                "synonyms": [
+                                    "the CW west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOX",
+                            "name": {
+                                "value": "fox",
+                                "synonyms": [
+                                    "fox east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOX-WEST",
+                            "name": {
+                                "value": "fox west"
+                            }
+                        },
+                        {
+                            "id": "HBO",
+                            "name": {
+                                "value": "HBO",
+                                "synonyms": [
+                                    "HBO east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HBO-WEST",
+                            "name": {
+                                "value": "HBO west"
+                            }
+                        },
+                        {
+                            "id": "HBO2",
+                            "name": {
+                                "value": "HBO2",
+                                "synonyms": [
+                                    "HBO 2",
+                                    "HBO two",
+                                    "HBO2 east",
+                                    "HBO 2 east",
+                                    "HBO two east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HBO2-WEST",
+                            "name": {
+                                "value": "HBO2 west",
+                                "synonyms": [
+                                    "HBO 2 west",
+                                    "HBO two west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HBO-SIGNATURE",
+                            "name": {
+                                "value": "HBO signature"
+                            }
+                        },
+                        {
+                            "id": "HBO-COMEDY",
+                            "name": {
+                                "value": "HBO Comedy"
+                            }
+                        },
+                        {
+                            "id": "HBO-FAMILY",
+                            "name": {
+                                "value": "HBO family",
+                                "synonyms": [
+                                    "HBO family east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HBO-FAMILY-WEST",
+                            "name": {
+                                "value": "HBO family west"
+                            }
+                        },
+                        {
+                            "id": "HBO-ZONE",
+                            "name": {
+                                "value": "HBO zone"
+                            }
+                        },
+                        {
+                            "id": "HBO-LATINO",
+                            "name": {
+                                "value": "HBO latino"
+                            }
+                        },
+                        {
+                            "id": "CINEMAX",
+                            "name": {
+                                "value": "cinemax",
+                                "synonyms": [
+                                    "cinemax east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CINEMAX-WEST",
+                            "name": {
+                                "value": "cinemax west"
+                            }
+                        },
+                        {
+                            "id": "MORE-MAX",
+                            "name": {
+                                "value": "more max",
+                                "synonyms": [
+                                    "moremax"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ACTION-MAX",
+                            "name": {
+                                "value": "action max",
+                                "synonyms": [
+                                    "actionmax"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "5-STAR-MAX",
+                            "name": {
+                                "value": "five star max",
+                                "synonyms": [
+                                    "five-star max",
+                                    "5 star max",
+                                    "5 starmax"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MOVIE-MAX",
+                            "name": {
+                                "value": "movie max",
+                                "synonyms": [
+                                    "moviemax"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "THRILLER-MAX",
+                            "name": {
+                                "value": "thriller max",
+                                "synonyms": [
+                                    "thrillermax"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CINEMAX-SPANISH",
+                            "name": {
+                                "value": "cinemax spanish"
+                            }
+                        },
+                        {
+                            "id": "STARZ",
+                            "name": {
+                                "value": "stars",
+                                "synonyms": [
+                                    "stars east",
+                                    "starz",
+                                    "starz east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "STARZ-WEST",
+                            "name": {
+                                "value": "stars west",
+                                "synonyms": [
+                                    "starz west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "STARZ-FAMILY",
+                            "name": {
+                                "value": "stars kids and family",
+                                "synonyms": [
+                                    "stars kids",
+                                    "stars family"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "STARZ-COMEDY",
+                            "name": {
+                                "value": "stars comedy"
+                            }
+                        },
+                        {
+                            "id": "STARZ-EDGE",
+                            "name": {
+                                "value": "stars edge",
+                                "synonyms": [
+                                    "starz edge"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "STARZ-BLACK",
+                            "name": {
+                                "value": "stars in black",
+                                "synonyms": [
+                                    "stars black",
+                                    "starz black"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "STARZ-CINEMA",
+                            "name": {
+                                "value": "stars cinema",
+                                "synonyms": [
+                                    "starz cinema"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE",
+                            "name": {
+                                "value": "stars encore",
+                                "synonyms": [
+                                    "stars encore east",
+                                    "encore",
+                                    "encore east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-WEST",
+                            "name": {
+                                "value": "stars encore west",
+                                "synonyms": [
+                                    "encore west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-CLASSIC",
+                            "name": {
+                                "value": "stars encore classic",
+                                "synonyms": [
+                                    "encore classic"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-WESTERNS",
+                            "name": {
+                                "value": "stars encore westerns",
+                                "synonyms": [
+                                    "encore westerns"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-SUSPENSE",
+                            "name": {
+                                "value": "stars encore suspense",
+                                "synonyms": [
+                                    "encore suspense"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-BLACK",
+                            "name": {
+                                "value": "stars encore black",
+                                "synonyms": [
+                                    "encore black"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-ACTION",
+                            "name": {
+                                "value": "stars encore action",
+                                "synonyms": [
+                                    "encore action"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ENCORE-FAMILY",
+                            "name": {
+                                "value": "stars encore family",
+                                "synonyms": [
+                                    "encore family"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME",
+                            "name": {
+                                "value": "showtime",
+                                "synonyms": [
+                                    "show time",
+                                    "showtime east",
+                                    "show time east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME-WEST",
+                            "name": {
+                                "value": "showtime west",
+                                "synonyms": [
+                                    "show time west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME2",
+                            "name": {
+                                "value": "showtime2",
+                                "synonyms": [
+                                    "show time2",
+                                    "showtime 2",
+                                    "show time 2",
+                                    "show time two",
+                                    "showtime two"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME-SHOWCASE",
+                            "name": {
+                                "value": "showtime showcase"
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME-EXTREME",
+                            "name": {
+                                "value": "showtime extreme"
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME-BEYOND",
+                            "name": {
+                                "value": "showtime beyond"
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME-NEXT",
+                            "name": {
+                                "value": "showtime next"
+                            }
+                        },
+                        {
+                            "id": "SHOWTIME-WOMEN",
+                            "name": {
+                                "value": "showtime women"
+                            }
+                        },
+                        {
+                            "id": "THE-MOVIE-CHANNEL",
+                            "name": {
+                                "value": "the movie channel",
+                                "synonyms": [
+                                    "the movie channel east",
+                                    "TMC"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "THE-MOVIE-CHANNEL-WEST",
+                            "name": {
+                                "value": "the movie channel west",
+                                "synonyms": [
+                                    "TMC west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "THE-MOVIE-CHANNEL-EXTRA",
+                            "name": {
+                                "value": "the movie channel extra",
+                                "synonyms": [
+                                    "TMC extra"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FLIX",
+                            "name": {
+                                "value": "flix"
+                            }
+                        },
+                        {
+                            "id": "SUNDANCE",
+                            "name": {
+                                "value": "sundance TV"
+                            }
+                        },
+                        {
+                            "id": "HALLMARK-MOVIES",
+                            "name": {
+                                "value": "hallmark movies and mysteries",
+                                "synonyms": [
+                                    "hallmark movies",
+                                    "hallmark movie channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HDNET",
+                            "name": {
+                                "value": "HD net",
+                                "synonyms": [
+                                    "HD net movies"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MGM",
+                            "name": {
+                                "value": "MGM"
+                            }
+                        },
+                        {
+                            "id": "SONY-MOVIES",
+                            "name": {
+                                "value": "sony movie channel"
+                            }
+                        },
+                        {
+                            "id": "SMITHSONIAN",
+                            "name": {
+                                "value": "smithsonian",
+                                "synonyms": [
+                                    "smithsonian channel",
+                                    "the smithsonian channel"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "CRIME-INVESTIGATION",
+                            "name": {
+                                "value": "crime and investigation network"
+                            }
+                        },
+                        {
+                            "id": "MTV-LIVE",
+                            "name": {
+                                "value": "MTV live"
+                            }
+                        },
+                        {
+                            "id": "SHORTS",
+                            "name": {
+                                "value": "shorts"
+                            }
+                        },
+                        {
+                            "id": "TVG",
+                            "name": {
+                                "value": "TVG"
+                            }
+                        },
+                        {
+                            "id": "COWBOY",
+                            "name": {
+                                "value": "cowboy channel"
+                            }
+                        },
+                        {
+                            "id": "PURSUIT",
+                            "name": {
+                                "value": "pursuit channel"
+                            }
+                        },
+                        {
+                            "id": "SPORTSMAN",
+                            "name": {
+                                "value": "sportsman channel"
+                            }
+                        },
+                        {
+                            "id": "OUTDOOR",
+                            "name": {
+                                "value": "outdoor channel"
+                            }
+                        },
+                        {
+                            "id": "FS-COLLEGE",
+                            "name": {
+                                "value": "fox college sports",
+                                "synonyms": [
+                                    "fox sports college",
+                                    "FS college"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "B1G",
+                            "name": {
+                                "value": "big ten network",
+                                "synonyms": [
+                                    "B1G"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SEC",
+                            "name": {
+                                "value": "SEC network",
+                                "synonyms": [
+                                    "SEC",
+                                    "s.e.c"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ESPN-CLASSIC",
+                            "name": {
+                                "value": "ESPN classic"
+                            }
+                        },
+                        {
+                            "id": "ESPN-GOAL-LINE",
+                            "name": {
+                                "value": "ESPN goal line"
+                            }
+                        },
+                        {
+                            "id": "FS2",
+                            "name": {
+                                "value": "fox sports 2",
+                                "synonyms": [
+                                    "fox sport2",
+                                    "fox sports two",
+                                    "FS 2"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "BEIN",
+                            "name": {
+                                "value": "be in sports",
+                                "synonyms": [
+                                    "bein sports"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FOX-SOCCER-PLUS",
+                            "name": {
+                                "value": "fox soccer plus"
+                            }
+                        },
+                        {
+                            "id": "ELEVEN-SPORTS",
+                            "name": {
+                                "value": "eleven sports network"
+                            }
+                        },
+                        {
+                            "id": "OLYMPIC",
+                            "name": {
+                                "value": "olympic channel"
+                            }
+                        },
+                        {
+                            "id": "NESN",
+                            "name": {
+                                "value": "NESN",
+                                "synonyms": [
+                                    "n.e.s.n"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NESN-PLUS",
+                            "name": {
+                                "value": "NESN plus",
+                                "synonyms": [
+                                    "n.e.s.n plus"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-BOSTON",
+                            "name": {
+                                "value": "NBC sports boston"
+                            }
+                        },
+                        {
+                            "id": "YES",
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "yes network",
+                                    "the yes network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "YES2",
+                            "name": {
+                                "value": "yes network two",
+                                "synonyms": [
+                                    "yes 2"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MSG",
+                            "name": {
+                                "value": "MSG"
+                            }
+                        },
+                        {
+                            "id": "MSG-PLUS",
+                            "name": {
+                                "value": "MSG plus"
+                            }
+                        },
+                        {
+                            "id": "MSG-WESTERN-NY",
+                            "name": {
+                                "value": "MSG western new york"
+                            }
+                        },
+                        {
+                            "id": "MSG-PLUS2",
+                            "name": {
+                                "value": "MSG plus two"
+                            }
+                        },
+                        {
+                            "id": "MSG2",
+                            "name": {
+                                "value": "MSG two"
+                            }
+                        },
+                        {
+                            "id": "SNY",
+                            "name": {
+                                "value": "SNY",
+                                "synonyms": [
+                                    "sports net new york"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MASN",
+                            "name": {
+                                "value": "MASN",
+                                "synonyms": [
+                                    "mid atlantic sports network"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "MASN2",
+                            "name": {
+                                "value": "MASN two",
+                                "synonyms": [
+                                    "mid atlantic sports network 2"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-DC",
+                            "name": {
+                                "value": "NBC sports washington",
+                                "synonyms": [
+                                    "NBC sports washington dc",
+                                    "NBC sports DC"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-DC-PLUS",
+                            "name": {
+                                "value": "nbc sports washington plus",
+                                "synonyms": [
+                                    "NBC sports washington dc plus",
+                                    "NBC sports DC plus"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SOUTH",
+                            "name": {
+                                "value": "fox sports south",
+                                "synonyms": [
+                                    "FS south"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-CAROLINAS",
+                            "name": {
+                                "value": "fox sports carolinas",
+                                "synonyms": [
+                                    "FS carolinas"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-TENNESSEE",
+                            "name": {
+                                "value": "fox sports tennessee",
+                                "synonyms": [
+                                    "FS tennessee"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SOUTHEAST",
+                            "name": {
+                                "value": "fox sports south east",
+                                "synonyms": [
+                                    "FS south east"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SOUTHEAST-ALT",
+                            "name": {
+                                "value": "fox sports south east alternate",
+                                "synonyms": [
+                                    "FS south east alternate"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SOUTHEAST-ALT2",
+                            "name": {
+                                "value": "fox sports south east alternate two"
+                            }
+                        },
+                        {
+                            "id": "FS-SUN",
+                            "name": {
+                                "value": "fox sports sun",
+                                "synonyms": [
+                                    "fox sports son",
+                                    "FS son"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SUN-ALT",
+                            "name": {
+                                "value": "fox sports sun alternate"
+                            }
+                        },
+                        {
+                            "id": "FS-FLORIDA",
+                            "name": {
+                                "value": "fox sports florida",
+                                "synonyms": [
+                                    "FS florida"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-FLORIDA-ALT",
+                            "name": {
+                                "value": "fox sports florida alternate"
+                            }
+                        },
+                        {
+                            "id": "ATT-SPORTS-PITTSBURGH",
+                            "name": {
+                                "value": "AT and T sports net pittsburgh",
+                                "synonyms": [
+                                    "AT and T sports pittsburgh",
+                                    "AT&T sports net pittsburgh",
+                                    "AT&T sports pittsburgh"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-OHIO",
+                            "name": {
+                                "value": "fox sports ohio",
+                                "synonyms": [
+                                    "FS ohio"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-CINNCINNATI",
+                            "name": {
+                                "value": "fox sports cincinnati",
+                                "synonyms": [
+                                    "FS cincinnati"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "SPORTS-TIME-OHIO",
+                            "name": {
+                                "value": "sports time ohio"
+                            }
+                        },
+                        {
+                            "id": "FS-DETROIT",
+                            "name": {
+                                "value": "fox sports detroit",
+                                "synonyms": [
+                                    "FS detroit"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-DETROIT-PLUS",
+                            "name": {
+                                "value": "fox sports detroit plus",
+                                "synonyms": [
+                                    "FS detroit plus"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-CHICAGO",
+                            "name": {
+                                "value": "NBC sports net chicago"
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-CHICAGO-PLUS",
+                            "name": {
+                                "value": "NBC sports chicago plus"
+                            }
+                        },
+                        {
+                            "id": "FS-NORTH",
+                            "name": {
+                                "value": "fox sports north",
+                                "synonyms": [
+                                    "FS north"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-WISCONSIN",
+                            "name": {
+                                "value": "fox sports wisconsin",
+                                "synonyms": [
+                                    "FS wisconsin"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-MW",
+                            "name": {
+                                "value": "fox sports midwest",
+                                "synonyms": [
+                                    "FS midwest"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-MW-ALT",
+                            "name": {
+                                "value": "fox sports midwest alternate"
+                            }
+                        },
+                        {
+                            "id": "FS-MW-ALT2",
+                            "name": {
+                                "value": "fox sports midwest alternate two"
+                            }
+                        },
+                        {
+                            "id": "FS-MW-ALT3",
+                            "name": {
+                                "value": "fox sports midwest alternate three"
+                            }
+                        },
+                        {
+                            "id": "FS-INDIANA",
+                            "name": {
+                                "value": "fox sports indiana",
+                                "synonyms": [
+                                    "FS indiana"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-KC",
+                            "name": {
+                                "value": "fox sports kansas city",
+                                "synonyms": [
+                                    "FS kansas city",
+                                    "FSKC",
+                                    "fox sports KC"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ATT-SPORTS-SW",
+                            "name": {
+                                "value": "AT and T sports net south west",
+                                "synonyms": [
+                                    "AT and T sports south west",
+                                    "AT and T sports southwest",
+                                    "AT&T sportsnet southwest",
+                                    "AT&T sports net southwest",
+                                    "AT&T sports southwest"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ATT-SPORTS-SW-ALT",
+                            "name": {
+                                "value": "AT and T sports net south west alternate",
+                                "synonyms": [
+                                    "AT and T sports south west alternate",
+                                    "AT&T sportsnet southwest alternate"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-OK",
+                            "name": {
+                                "value": "fox sports oklahoma",
+                                "synonyms": [
+                                    "FS oklahoma",
+                                    "FSOK"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SW",
+                            "name": {
+                                "value": "fox sports south west",
+                                "synonyms": [
+                                    "FS south west",
+                                    "FS southwest"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FW-SW-PLUS",
+                            "name": {
+                                "value": "fox sports south west plus",
+                                "synonyms": [
+                                    "FS south west plus",
+                                    "FS southwest plus"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-SW-ALT",
+                            "name": {
+                                "value": "fox sports south west alternate"
+                            }
+                        },
+                        {
+                            "id": "FS-SW-ALT2",
+                            "name": {
+                                "value": "fox sports south west alternate two"
+                            }
+                        },
+                        {
+                            "id": "FS-NOLA",
+                            "name": {
+                                "value": "fox sports new orleans",
+                                "synonyms": [
+                                    "FS new orleans",
+                                    "FS nola"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LONGHORN",
+                            "name": {
+                                "value": "longhorn network"
+                            }
+                        },
+                        {
+                            "id": "ALTITUDE",
+                            "name": {
+                                "value": "altitude"
+                            }
+                        },
+                        {
+                            "id": "ALTITUDE2",
+                            "name": {
+                                "value": "altitude two"
+                            }
+                        },
+                        {
+                            "id": "ATT-SPORTS-ROCKY-MOUNTAIN",
+                            "name": {
+                                "value": "AT and T sports net rocky mountain",
+                                "synonyms": [
+                                    "AT and T sports rocky mountain",
+                                    "AT&T sports net rocky mountain",
+                                    "AT&T sports rocky mountain"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ATT-SPORTS-UTAH",
+                            "name": {
+                                "value": "AT and T sports net utah",
+                                "synonyms": [
+                                    "AT and T sports utah",
+                                    "AT&T sports net utah",
+                                    "AT&T sports utah"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ATT-SPORTS-ROCKY-MOUNTAIN-WEST",
+                            "name": {
+                                "value": "AT and T sports net rocky mountain west",
+                                "synonyms": [
+                                    "AT and T sports rocky mountain west",
+                                    "AT&T sports net rocky mountain west",
+                                    "AT&T sports rocky mountain west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-AZ",
+                            "name": {
+                                "value": "fox sports arizona",
+                                "synonyms": [
+                                    "FS arizona"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "FS-AZ-PLUS",
+                            "name": {
+                                "value": "fox sports arizona plus",
+                                "synonyms": [
+                                    "FS arizona plus"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ROOT-SPORTS-NW",
+                            "name": {
+                                "value": "root sports north west"
+                            }
+                        },
+                        {
+                            "id": "ROOT-SPORTS-NW-ALT",
+                            "name": {
+                                "value": "root sports north west alternate"
+                            }
+                        },
+                        {
+                            "id": "SPECTRUM-SPORTS",
+                            "name": {
+                                "value": "spectrum sports net"
+                            }
+                        },
+                        {
+                            "id": "FS-WEST",
+                            "name": {
+                                "value": "fox sports west",
+                                "synonyms": [
+                                    "FS west"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "PRIME-TICKET",
+                            "name": {
+                                "value": "prime ticket"
+                            }
+                        },
+                        {
+                            "id": "FS-SAN-DIEGO",
+                            "name": {
+                                "value": "fox sports san diego",
+                                "synonyms": [
+                                    "FS san diego"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-BAY",
+                            "name": {
+                                "value": "NBC sports bay area"
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-BAY-PLUS",
+                            "name": {
+                                "value": "NBC sports bay area plus"
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-CALI",
+                            "name": {
+                                "value": "NBC sports california"
+                            }
+                        },
+                        {
+                            "id": "NBC-SPORTS-CALI-PLUS",
+                            "name": {
+                                "value": "NBC sports california plus"
+                            }
+                        },
+                        {
+                            "id": "MLB-STRIKE-ZONE",
+                            "name": {
+                                "value": "MLB strike zone"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Room_List",
+                    "values": [
+                        {
+                            "id": "ROOM1",
+                            "name": {
+                                "value": "family room"
+                            }
+                        },
+                        {
+                            "id": "ROOM2",
+                            "name": {
+                                "value": "living room"
+                            }
+                        },
+                        {
+                            "id": "ROOM3",
+                            "name": {
+                                "value": "master bedroom"
+                            }
+                        },
+                        {
+                            "id": "ROOM4",
+                            "name": {
+                                "value": "ronins room"
+                            }
+                        },
+                        {
+                            "id": "ROOM5",
+                            "name": {
+                                "value": "test"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
