@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    reverseproxy:
+        image: reverseproxy
+        ports:
+            - 8888:8888
+        restart: always
