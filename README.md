@@ -1,6 +1,6 @@
 # Azure Function for integrating Alexa with DirecTV
 
-This repository is intended to allow you to use Alexa to control your DirecTV Genie set top boxes (STB) within your network.  When you speak to Alexa, it will then forward key information to your Azure Function.  Your Azure Function will then make a `fetch` call to your local network to enact the command you want on your STB.  
+This repository is intended to allow you to use Alexa to control your DirecTV Genie set top boxes (STB) within your network.  When you speak to Alexa, it will then forward key information to your Azure Function.  Your Azure Function will then make a `fetch` call to your local network to enact the command you want on your STB.  For a much more indepth explanation of what's going on here, check out the post on [Medium](https://medium.com/@Jawa_the_Hutt/azure-functions-alexa-directv-47dc18b6af97) where I provide additional explanation.
 
 The logic of this function is setup in such a way that you can use multiple Alexa devices in your network to control specific STB's in a certain room.  You can do this by including the name of the room when asking Alexa to do something, or with a bit of setup on your end, it will allow Alexa to intuitively know which STB to control based on the room you're in when speaking to Alexa.  
 
